@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:padding="5dip"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView
+    	android:text="@string/operaterMode"
+    	android:textAppearance="?android:attr/textAppearanceMedium"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"/>
+    <RadioGroup
+    		android:layout_marginLeft="10dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    		
+            <RadioButton 
+            	android:id="@+id/easyMode"
+            	android:text="@string/easyMode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+    		<TextView
+		    	android:text="@string/easyModeDesc"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"/>
+            <RadioButton 
+            	android:id="@+id/hardMode"
+            	android:text="@string/hardMode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+    		<TextView
+		    	android:text="@string/hardModeDesc"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"/>
+    </RadioGroup>
+    <TextView
+    	android:text="@string/screenSetting"
+    	android:textAppearance="?android:attr/textAppearanceMedium"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"/>
+    <RadioGroup
+    		android:layout_marginLeft="10dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+    
+            <RadioButton android:id="@+id/screenHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/screenHorizontal" />
+    
+            <RadioButton android:id="@+id/screenVertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/screenVertical" />
+    
+    </RadioGroup>
+    <TextView
+    	android:text="@string/cellNumSetting"
+    	android:textAppearance="?android:attr/textAppearanceMedium"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"/>
+    <TableLayout
+		android:stretchColumns="1"
+		android:layout_marginLeft="10dip"
+		android:layout_width="fill_parent"
+    	android:layout_height="fill_parent">
+		<TableRow 
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:gravity="center">
+			<TextView
+				android:text="@string/numColoum"
+		       	android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" />
+			
+			<SeekBar android:id="@+id/seekNumColoum"
+				android:layout_marginLeft="10dip"
+				android:layout_marginRight="10dip"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:max="10"
+		        android:progress="3"
+		         />
+		
+		    <TextView android:id="@+id/progressNumColoum"
+		       	android:layout_width="30dip"
+		        android:layout_height="wrap_content" />
+						
+		</TableRow>
+	</TableLayout>
+	<TableLayout
+		android:stretchColumns="1"
+		android:layout_marginLeft="10dip"
+		android:layout_width="fill_parent"
+    	android:layout_height="fill_parent">
+		<TableRow 
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:gravity="center">
+			<TextView
+				android:text="@string/numRow"
+		       	android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" />
+			
+			<SeekBar android:id="@+id/seekNumRow"
+				android:layout_marginLeft="10dip"
+				android:layout_marginRight="10dip"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:max="10"
+		        android:progress="3"
+		         />
+		
+		    <TextView android:id="@+id/progressNumRow"
+		       	android:layout_width="30dip"
+		        android:layout_height="wrap_content" />
+						
+		</TableRow>
+	</TableLayout>
+	<CheckBox
+    		android:id="@+id/sound"
+    		android:text="@string/sound"
+    		android:checked="true"
+    		android:layout_width="fill_parent" 
+	    	android:layout_height="wrap_content"/>
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.hanson.pintu"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".activity.LoadActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.ListActivity"></activity>
+		<activity android:name=".activity.CollateActivity"></activity>
+		<activity android:name=".activity.MainActivity"></activity>
+		<activity android:name=".activity.InitActivity"></activity>
+		<activity android:name=".activity.AboutActivity"></activity>
+		<activity 
+			android:name=".activity.TypeListOrderActivity"
+			android:theme="@android:style/Theme.Dialog">
+		</activity>
+		<activity 
+			android:name=".activity.TypeListActivity"
+			android:theme="@android:style/Theme.Dialog">
+		</activity>
+    </application>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-sdk android:minSdkVersion="7" />
+
+</manifest> 
